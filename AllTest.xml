@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Application">
+    <test name="test_1">
+        <parameter name="Invalid_email" value="gfdhgf" />
+        <parameter name="Valid_email" value="mahmoudbassam1999@gmail.com"/>
+        <parameter name="FirstName" value="Hello"/>
+        <parameter name="Surname" value="BroMan"/>
+        <parameter name="Password" value="Mahmoud123456@"/>
+        <parameter name="password_with_less_than_6_digits" value="Cho1"/>
+        <parameter name="password_without_letters" value="123456#"/>
+        <parameter name="password_without_special_characters" value="As12233"/>
+        <parameter name="Invalid_phoneNumber" value="5456"/>
+        <parameter name="Valid_phoneNumber" value="+201011833987"/>
+        <parameter name="Index_Male" value="0"/>
+        <classes>
+            <class name="Test_Facebook_SignUp" />
+        </classes>
+    </test>
+</suite>
