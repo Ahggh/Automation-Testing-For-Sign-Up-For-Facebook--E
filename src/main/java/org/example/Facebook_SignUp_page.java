@@ -108,10 +108,13 @@ try {
             return actual_String.equals(Expected_String);
         }
     });
+    if(is_error_message_founded){
+        System.out.println(Expected_String);
+    }
 }
 catch (TimeoutException ignored){
-
     Assert.fail("Test failed because the element was not clickable.");
+
 }
 
 
